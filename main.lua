@@ -75,24 +75,11 @@ function love.draw()
         else
           strout("Vibration not supported")
         end
-        
       end
-     
     end
-    
   else
     love.graphics.print("love.joystick is nil", 10, 50)
   end
-  
-
 end
 
-function love.keypressed(key)
-  if key == "0" and love.joystick.isOpen(0) then
-    love.joystick.close(0)
-  elseif key == "0" then
-    love.joystick.open(0)
-  end
-
-end
 
